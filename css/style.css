@@ -1,0 +1,623 @@
+.header_top{
+    background: #000;
+    height: 47px;
+}
+.nav h3{
+        font-size: 32px;
+    font-weight: 700;
+    color: #2D573A;
+}
+.nav h4{
+    color: #C19138;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 25px;
+}
+@media (min-width: 768px){
+.navbar-nav>li {
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+}
+}
+.social_icon_top{
+    list-style: none;
+}
+.social_icon_top li{
+    float: left;
+    margin-left: 10px;
+    font-size: 33px;
+}
+.fa-facebook-official{
+    color: #3A589B;
+}
+.fa-youtube-square{
+    color: #CF3427;
+}
+.social_icon_top li a{
+    
+}
+.navbar-inverse{
+	   
+    background: #fff!important;
+    color: #151414!important;
+    border: none!important;
+    height: 116px;
+}
+.navbarmiddle h3{
+	 margin-top: 28px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: #000;
+}
+.navbar-brand {
+    float: left;
+    padding: 10px 0px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 11px;
+    }
+
+.navbar-inverse .navbar-nav>.active>a{
+	background: transparent;
+	color: #000;
+	padding-left: 0px;
+}.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+	background: transparent;
+	color: #000;
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+	background: transparent;
+	color: #000;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+	color:#000;
+}
+#myNavbar{
+	float: right;
+}
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover{
+	color: #000;
+}
+.social_menu{
+    margin-top: 11px;
+}
+.social_icon_top ul{
+    display: block;
+    list-style: none;
+    float: right;
+    padding: 5px;
+   
+}
+.social_icon_top ul li{
+      float: left;
+    padding: 4px 5px;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    background: #0000FF;
+    margin-left: 5px;
+
+}
+.social_icon_top ul li a{
+color: #fff;
+color: #fff;
+font-size: 20px;
+padding: 0px 5px;
+
+
+
+}
+.navbar, .navbar-inverse{
+
+}
+.slider_section{
+	background-image: url(../img/sliderfinal.jpg);
+    height: 615px;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.layer {
+    background-color: rgba(4, 4, 4, 0.26);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}
+.positionalClass{
+	position: absolute;
+	top: 70%;
+	left: 40%;
+	font-size:30px; 
+	color: #fff;
+	display: inline;
+}
+.positionalClass p{
+	font-color: #fff;
+ z-index: -1;
+}
+
+
+.fa-plus-circle{
+ font-size: 30px;
+ color: #C59439 ;
+}
+.slider_image{
+
+}
+.slider_image img{
+        max-width: 28px;
+ 
+}
+.slider_bottom{
+	padding: 50px 0px;
+    background: #252525;
+ }
+.desc_wrapper{
+	padding: 7px 4px;
+    color: #fff;
+    text-align: center;
+    width: 360px;
+    position: absolute;
+    bottom: 0px;
+    background: #000;
+    opacity: .6;
+}
+
+.welcome_ndma{
+	background-color:#CCCCCC;
+	padding: 50px 0px;
+}
+.nav-tabs>li>a{
+	 padding: 20px 30px;
+	 background: #E1E1E1;
+	 color: #000;
+	 margin-right: 6px;
+}
+.nav-tabs>li.active>a{
+    border: 1px solid #F3F3F3;
+        color: #555;
+    cursor: default;
+    background-color: #F3F3F3;
+ 
+    border-bottom-color: transparent;
+    padding: 20px 30px;
+}
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+    }
+.publications_area{
+	padding: 50px 0px;
+    background: #2D573A;
+    color: #fff;
+}
+.sliding_box1{
+	height: 330px;
+	width:200px;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+}
+.photo_wrapper img{
+	width:100%;
+	height: 300px;
+
+}
+.sliding_box1 img{
+	    height: 300px;
+    width: 313px;
+    float: left!important;
+    display: block;
+	
+}
+.desc_wrapper2{
+	padding: 10px 4px;
+   
+    color: #fff;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+}
+.ndma_news{
+    border-bottom: 1px solid #ddd;
+    margin-top: 20px;
+}
+.date p{
+    color: #D49A39;
+    font-size: 16px;
+}
+.news_headline{
+
+}
+.news_headline h4{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.publications_photo button{
+	margin-left: 25px;
+
+}
+.resouce_icon{
+	display: flex;
+}
+.resources_images{
+float: left;
+width: 250px;
+text-align: center;
+}
+.resources_intro{
+
+}
+.resources_intro h1{
+    margin-bottom: 30px;
+        font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.resources_images img {
+   width: 80px;
+   text-align: center;
+   margin-bottom: 10px;
+}
+.resources_images h4{
+    padding: 0px 27px;
+    text-align: center;
+    background: #2B573A;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+.resources_images>h4>a{
+    color: #fff;
+}
+.resources_images>h4>a:hover{
+    color: #D49A39;
+}
+.submitbutton{
+    display: inline-block;
+    padding: 11px 40px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,.03);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.03);
+    background: #2B573A;
+    color: #fff;
+  
+}
+.subscribebutton{
+    display: inline-block;
+    padding: 16px 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,.03);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.03);
+    background: #D49A39;
+    color: #fff;
+}
+.subcriptionMail{
+    background: #393939!important;
+}
+  
+
+.contact_section{
+	background: #D49A39;
+
+	
+
+}
+.get-in-touch{
+	background: transparent;
+    padding: 21px 25px 25px 76px;
+
+}
+.form-control {
+    margin-bottom: 7px;
+    padding: 25px 20px;
+    background-color: #EBEBEB!important;
+}
+.get-in-touch h1{
+     font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+
+}
+.contact-map{
+
+}
+.footer_top{
+	    padding: 50px 0px;
+    background: #202127;
+    color: #fff;
+}
+.footer_top p{
+
+    color: #747475;
+}
+.widget_text h4{
+    font-size: 22px;
+    color: #d2cdcd;;
+    padding-bottom: 20px;
+}
+.textwidget ul{
+
+	    list-style: none;
+    display: table-footer-group;
+}
+.textwidget ul li{
+	padding-left: 0px;
+	margin-left: 0px;
+	font-size: 18px;
+	color: #80828d;
+
+	
+}
+.textwidget ul li a{
+	
+	color: #80828d;
+
+	
+}
+.social_menu_bottom{
+
+}
+.social_menu_bottom ul{
+	list-style: none;
+	float: right;
+}
+.social_menu_bottom ul li{
+	float: left;
+	padding-left: 5px;
+	font-size: 25px;
+	color: #CCCCCC;
+	margin-left: 10px;
+}
+/*
+Vertical Tab Styles
+*/
+/* Style the tab */
+.tab {
+    float: left;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 10px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #fff;
+ 
+}
+.tab-content {
+    background: #fff;
+    padding: 10px 15px;
+    height: 348px;
+}
+/* Style the tab content */
+
+    .tabcontent {
+    float: left;
+    padding: 32px 26px;
+    width: 70%;
+    border-left: none;
+    height: 360px;
+    background: #fff;
+}
+
+.readmore{
+	background: #2B573A;
+	padding: 10px 40px;
+	color: #fff;
+	border: 1px solid transparent;
+	font-size: 18px;
+	border-radius: 5px;
+
+}
+.widget_text h5{
+color: #747475;
+padding-bottom: 10px;
+}
+.fa-map-marker, .fa-phone, .fa-envelope{
+    margin-right: 15px;
+    color: #D49A39;
+
+}
+.footer{
+	    background: #D49A39;
+    padding: 20px 0px 5px 0px;
+    text-align: center;
+}
+.footer_menu{
+    list-style: none;
+    padding-left: 0px;
+}
+.footer_menu li{
+    padding: 5px 0px;
+}
+.footer_menu li a{
+    color: #747475;
+}
+.copyright a{
+    color: #000;
+    font-weight: 700;
+}
+.p-l-0{
+    padding-left: 0px;
+}
+/*
+End Veritcal Tabs
+*/
+.ndma_news h3{
+color: #0000FF;
+}
+.tab-content{
+	background: #F3F3F3;
+    padding: 30px 30px;
+}
+.ndma_header h1{
+	color: #154DA3;
+}
+.carousel-caption{
+	left: 15%;
+text-align: left;
+}
+.p-r-0{
+	padding-right: 0px;
+}
+/*
+tooltip design
+
+.tooltip {
+    position: fixed;
+    background: #fff;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background: #fff;
+
+
+    position: absolute;
+    z-index: 1;
+     top: -5px;
+    left: 105%; 
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+*/
+div.tooltip-inner {
+    max-width: 350px;
+   
+ 
+}
+.tooltip-inner {
+  background-color: transparent !important;
+  /*!important is not necessary if you place custom.css at the end of your css calls. For the purpose of this demo, it seems to be required in SO snippet*/
+  color: #fff!important;
+   -webkit-transition-duration: .5s; /* Safari */
+    -webkit-transition-delay: .15s; /* Safari */
+    font-size: 17px;
+
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: transparent !important;
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: transparent !important;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: transparent !important;
+}
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: transparent !important;
+}
+.fa-plus-circle{
+	cursor: pointer;
+	color:  #C59439;
+}
+.fade {
+	
+
+}
+.onetooltip{
+	position: absolute;
+    top: 17%;
+    right: 18%;
+}
+.twotooltip{
+   position: absolute;
+    top: 24%;
+    right: 40%;
+}
+.threetooltip{
+	position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.fourrtooltip{
+	    position: absolute;
+    top: 50%;
+    left: 53%;
+}
+.fivetooltip{
+	position: absolute;
+    top: 70%;
+    right: 40%;
+}
+@media (min-width: 768px){
+.navbar-nav {
+    float: left;
+    margin: 0;
+    margin-left: 20px!important;
+    margin-top: -10px!important;
+}
+}
+.leftmenu{
+	width: 100%;
+}
+.navbar-header{
+ width: 120px;
+}
+.navbarmiddle{
+	
+}
+.rightmenu{
+}
+.nav-tabs>li.active>a:focus{
+    background-color: #f3f3f3;
+}
