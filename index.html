@@ -11,26 +11,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<!--
-<section class="header_top">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10">
-        
-      </div>
-       <div class="col-md-2 pull-right">
-        <div class="social_icon_top">
-          <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-       </div>
-    </div>
-  </div>
-</section>
--->
 <div class="section_menu">
   <div class="container">
     <div class="row">
@@ -118,9 +98,9 @@
     <div class="container-fluid">
 <div class="row">
    <div class="slider_image">
-    <img class="onetooltip" src="img/plus-white.svg">
-     <img class="twotooltip" src="img/plus-white.svg">
-      <img class="threetooltip" src="img/plus-white.svg">
+       <img class="onetooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="<a href='http://www.wojt.eu' target='blank' >click me, I'll try not to disappear</a>" src="img/plus-white.svg">
+      <img class="twotooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="<a href='http://www.wojt.eu' target='blank' >click me, I'll try not to disappear</a>" src="img/plus-white.svg">
+      <img class="threetooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="<a href='http://www.wojt.eu' target='blank' >click me, I'll try not to disappear</a>" src="img/plus-white.svg" >
   </div>
 </div>
 </div>
@@ -137,8 +117,9 @@
           <img src="img/publicawarness.png" alt="suppot-min" width="370" height="113">
         </div>
         <div class="desc_wrapper">
-          <h4>Public Awareness</h4>
-        </div></a>
+         
+        </div>
+       <h4>Public Awareness</h4></a>
       </div>
      </div>
      <div class="col-md-4">
@@ -147,8 +128,10 @@
           <img src="img/disaster.png" alt="suppot-min" width="370" height="113">
         </div>
         <div class="desc_wrapper">
-          <h4>Natural Disasters</h4>
-        </div></a>
+        
+        </div>
+         <h4>Natural Disasters</h4>
+      </a>
       </div>
      </div>
      <div class="col-md-4">
@@ -157,8 +140,9 @@
           <img src="img/map.png" alt="suppot-min" width="370" height="113">
         </div>
         <div class="desc_wrapper">
-          <h4>Contact Us</h4>
-        </div></a>
+         
+        </div>
+       <h4>Contact Us</h4></a>
       </div>
      </div>
       
@@ -421,23 +405,7 @@
   
 </section>
 <script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+  <script src="js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
@@ -449,6 +417,7 @@ document.getElementById("defaultOpen").click();
     tippy('button')
   </script>
   <script>
+  /*
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
      $('.onetooltip').tooltip({title: "Types of natural disasters", placement: "left"}); 
@@ -457,7 +426,39 @@ $(document).ready(function(){
       $('.fourrtooltip').tooltip({title: "Lorem Ipsum is simply dummy text of the", placement: "left"}); 
        $('.fivetooltip').tooltip({title: "Lorem Ipsum is simply dummy text of the", placement: "left"});    
 });
+*/
+var originalLeave = $.fn.tooltip.Constructor.prototype.leave;
+$.fn.tooltip.Constructor.prototype.leave = function(obj) {
+  var self = obj instanceof this.constructor ?
+    obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type)
+  var container, timeout;
 
+  originalLeave.call(this, obj);
+
+  if (obj.currentTarget) {
+    container = $(obj.currentTarget).siblings('.tooltip')
+    timeout = self.timeout;
+    container.one('mouseenter', function() {
+      //We entered the actual popover – call off the dogs
+      clearTimeout(timeout);
+      //Let's monitor popover content instead
+      container.one('mouseleave', function() {
+        $.fn.tooltip.Constructor.prototype.leave.call(self, self);
+      });
+    })
+  }
+};
+
+
+$('body').tooltip({
+  selector: '[data-toggle]',
+  trigger: 'click hover',
+  placement: 'left',
+  delay: {
+    show: 50,
+    hide: 400
+  }
+});
 </script>
 </body>
 </html>

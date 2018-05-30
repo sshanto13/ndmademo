@@ -166,14 +166,23 @@ padding: 0px 5px;
     background: #252525;
  }
 .desc_wrapper{
-	padding: 7px 4px;
+	padding: 37px 4px;
     color: #fff;
     text-align: center;
     width: 360px;
     position: absolute;
     bottom: 0px;
-    background: #000;
+    background: #000000a1;
     opacity: .6;
+    bottom: 44px;
+}
+.sliding_box h4{
+    bottom: 56px;
+    position: relative;
+    color: #fff;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 22px;
 }
 
 .welcome_ndma{
@@ -620,4 +629,10 @@ div.tooltip-inner {
 }
 .nav-tabs>li.active>a:focus{
     background-color: #f3f3f3;
+}
+.slider_image a{
+color: #fff!important;
+}
+.slider_image a:hover{
+color: #D49A39!important;
 }
